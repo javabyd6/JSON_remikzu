@@ -33,7 +33,19 @@
             <version>2.9.8</version>
             <scope>compile</scope>
         </dependency>
+        <dependency>
+            <groupId>com.sda</groupId>
+            <artifactId>JSON_remikzu</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <scope>compile</scope>
+        </dependency>
     </dependencies>
+
+    <parent>
+        <groupId>com.sda</groupId>
+        <artifactId>JSON_remikzu</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
 
     
 </project>

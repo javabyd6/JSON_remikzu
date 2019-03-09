@@ -1,6 +1,9 @@
 package com.sda.savejson;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.sda.json.Address;
+import com.sda.json.Person;
+import com.sda.json.Student;
 
 import java.io.File;
 import java.io.IOException;
