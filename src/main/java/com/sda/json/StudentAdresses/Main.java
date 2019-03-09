@@ -3,10 +3,12 @@ package com.sda.json.StudentAdresses;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
+import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -30,6 +32,19 @@ public class Main {
             String studentsStr = mapper.writeValueAsString(listOfStudents);
             System.out.println(studentsStr);
             Files.write(Paths.get("studentList.json"), studentsStr.getBytes());
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        ObjectMapper mapper2 = new ObjectMapper();
+
+        try {
+            String studentsStr2 = mapper2.writeValueAsString(listOfStudents);
+            mapper2.writeValue(new File("studentList.json"), listOfStudents);
+
+            Student[] studentArray = mapper2.readValue(new File("studentList.json"), Student[].class);
+
+            List<Student> studentList2 = Arrays.asList(studentArray);
         } catch (IOException e) {
             e.printStackTrace();
         }

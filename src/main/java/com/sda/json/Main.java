@@ -41,6 +41,7 @@ public class Main {
 
         ObjectMapper mapper2 = new ObjectMapper();
 
+        // zapisanie listy do formatu json
         try {
             String peopleStr = mapper2.writeValueAsString(listOfPeople);
             Files.write(Paths.get("peopleList.json"), peopleStr.getBytes());
