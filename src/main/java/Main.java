@@ -1,5 +1,5 @@
 /**
  * @author Remigiusz Zudzin
  */
-public class Projekt1 {
+public class Main {
 }
