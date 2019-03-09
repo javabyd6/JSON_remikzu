@@ -16,13 +16,9 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Address address1 = new Address("Bydgoszcz", "Dluga 9");
-        Address address2 = new Address("Warszawa", "Luzycka 1");
-        Address address3 = new Address("Lodz", "Biedna 2");
-
-        Student student1 = new Student("Jan", "Kowalski", address1);
-        Student student2 = new Student("Tomasz", "Nowak", address2);
-        Student student3 = new Student("Anna", "Jakas", address3);
+        Student student1 = new Student("Jan", "Kowalski", new Address("Bydgoszcz", "Dluga 9"));
+        Student student2 = new Student("Tomasz", "Nowak", new Address("Warszawa", "Luzycka 1"));
+        Student student3 = new Student("Anna", "Jakas", new Address("Lodz", "Biedna 2"));
 
         List<Student> listOfStudents = new ArrayList<>();
         listOfStudents.add(student1);
