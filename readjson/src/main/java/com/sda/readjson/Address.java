@@ -1,4 +1,4 @@
-package com.sda.json;
+package com.sda.readjson;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -10,11 +10,8 @@ import lombok.NoArgsConstructor;
 @Data //<- gettery i setery
 @AllArgsConstructor //konstruktory warunkowe
 @NoArgsConstructor //konstruktory bezwarunkowe
-public class Person {
+public class Address {
 
-    private String name;
-    private String lastname;
-    private int age;
-
-
+    String city;
+    String street;
 }

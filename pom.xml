@@ -7,6 +7,12 @@
     <groupId>com.sda</groupId>
     <artifactId>JSON_remikzu</artifactId>
     <version>1.0-SNAPSHOT</version>
+
+    <modules>
+        <module>readjson</module>
+        <module>savejson</module>
+    </modules>
+
     <build>
         <plugins>
             <plugin>
@@ -51,7 +57,7 @@
             <artifactId>lombok</artifactId>
             <version>1.18.6</version>
             <scope>provided</scope>
-        </dependency> 
+        </dependency>
 
 
     </dependencies>

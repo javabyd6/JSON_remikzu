@@ -1,4 +1,4 @@
-package com.sda.json;
+package com.sda.readjson;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

@@ -1,4 +1,4 @@
-package com.sda.json.StudentAdresses;
+package com.sda.savejson;
 
 /**
  * @author Remigiusz Zudzin
