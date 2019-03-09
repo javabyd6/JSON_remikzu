@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Jan",
+    "lastName": "Kowalski",
+    "address": {
+      "city": "Bydgoszcz",
+      "street": "Dluga 9"
+    }
+  },
+  {
+    "name": "Tomasz",
+    "lastName": "Nowak",
+    "address": {
+      "city": "Warszawa",
+      "street": "Luzycka 1"
+    }
+  },
+  {
+    "name": "Anna",
+    "lastName": "Jakas",
+    "address": {
+      "city": "Lodz",
+      "street": "Biedna 2"
+    }
+  }
+]
